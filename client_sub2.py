@@ -29,7 +29,7 @@ cliente_sub = client.Client("cliente_sub2")
 cliente_sub.on_connect = conectar
 
 cliente_sub.message_callback_add("umidade", recebimento_umidade)
-cliente_sub.message_callback_add("temperatura", recebimento_msg)
+cliente_sub.message_callback_add("temperatura", recebimento_umidade)
 cliente_sub.message_callback_add("Luminosidade", recebimento_luminosidade)
 
 cliente_sub.connect("localhost", 1883)

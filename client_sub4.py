@@ -28,7 +28,7 @@ def recebimento_luminosidade(client, userdata, msg):
     print("Mensagem recebida: ", mensagem, "Tópico:", topico)
 
 #criamos o cliente MQTT
-cliente_sub = client.Client("cliente_sub")
+cliente_sub = client.Client("cliente_sub4")
 
 cliente_sub.on_connect = conectar
 
